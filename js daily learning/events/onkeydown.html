@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>onkeydown Event Example</title>
+</head>
+<body>
+  <label for="textInput">Type Something:</label>
+  <input type="text" id="textInput">
+
+  <script>
+    // Get reference to the input element
+    const textInput = document.getElementById("textInput");
+
+    // Add event listener for the "onkeydown" event
+    textInput.onkeydown = function(event) {
+      // Get the key code of the pressed key
+      const keyCode = event.keyCode;
+
+      // Display the key code in the console
+      console.log("Key Code:", keyCode);
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>onclick event handling</h2>
+    <p>alert a number on the onclick of a button</p>
+    
+    <button onclick="myfun()">for paragraph</button>
+    <button onclick="alert('me hu khalnayak ')">click me</button>
+    <button onclick="myfun2()">refresh for para</button>
+    <script>
+        function myfun(){
+            document.getElementById('demo').innerHTML="me hu raj sharma hahhaa";
+        }
+        function myfun2(){
+            document.getElementById('demo').innerHTML="me refresh ho gaya";
+        }
+    </script>
+    <p id="demo"></p>
+</body>
+</html>

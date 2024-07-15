@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print</title>
+</head>
+<body>
+    <h2>printing the page</h2>
+    <p>Using this we can save any type of document in pdf format</p>
+    <!-- <button onclick="print()">print me</button> -->
+    <h3>calculate sum</h3>
+    <label for="num1">number1:</label>
+    <input type="number" id="num1"><br>
+    <label for="num2">number2:</label>
+    <input type="number" id="num2"><br>
+    <p id="demo">heyyyyyyyyyyyy</p>
+    <button onclick="calculateSum()">SUM</button>
+    
+    
+    <script>
+        function calculateSum(){
+            num1=parseInt(document.getElementById('num1').value);
+            num2=parseInt(document.getElementById('num2').value);
+            let sum=num1+num2;
+            document.getElementById('demo').innerHTML="sum is: "+ sum +".";
+        }
+    </script>
+</body>
+</html>

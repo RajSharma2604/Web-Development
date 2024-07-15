@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    input[type="number"] {
+      color: black;
+    }
+    input {
+      margin-bottom: 16px;
+      border-radius: 6px;
+      border-width: 2px;
+      border-color: red;
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calculator</h1>
+  <label for="num1">Number 1:</label>
+  <input type="number" id="num1"><br>
+  <label for="num2">Number 2:</label>
+  <input type="number" id="num2"><br>
+  <button onclick="calculateSum()">Calculate Sum</button><br>
+  <div id="result"></div>
+
+  <script>
+    function calculateSum() {
+      // Get the input values
+      let num1 = parseFloat(document.getElementById("num1").value);
+      let num2 = parseFloat(document.getElementById("num2").value);
+
+      // Calculate the sum
+      let sum = num1 + num2;
+
+      // Display the result
+      document.getElementById("result").textContent = `Sum: ${sum}`;
+    }
+  </script>
+</body>
+</html>

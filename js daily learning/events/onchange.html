@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>onchange Event Example</title>
+</head>
+<body>
+  <label for="colorSelect">Select a Color:</label>
+  <select id="colorSelect">
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+  </select>
+
+  <script>
+    // Get reference to the select element
+    const colorSelect = document.getElementById("colorSelect");
+
+    // Add event listener for the "onchange" event
+    colorSelect.onchange = function(event) {
+      // Get the selected value
+      const selectedColor = colorSelect.value;
+
+      // Display the selected value in the console
+      console.log("Selected Color:", selectedColor);
+    };
+  </script>
+</body>
+</html>

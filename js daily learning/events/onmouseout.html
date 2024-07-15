@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Extract</title>
+</head>
+<body>
+    <style>
+        #demob {
+            padding: 12px 15px 12px 15px;
+            background-color: chocolate;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+    <h2 id="demoh">This is my heading</h2>
+    <p id="demop">This is my paragraph</p>
+    <button id="demob" onclick="myfun()" onmouseover="myfun2()" onmouseout="myfun3()">click me</button>
+    <p id="demop2"></p>
+    <script>
+        function myfun(){
+            document.getElementById('demop').innerHTML="The paragraph has been changed.";
+        }
+        function myfun2(){
+            document.getElementById('demoh').innerHTML="The heading has been changed.";
+        }
+        function myfun3(){
+            document.getElementById('demoh').innerHTML="This is my heading(restored).";
+        }
+    </script>
+
+</body>
+</html>

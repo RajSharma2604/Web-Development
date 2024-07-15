@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+</head>
+<body>
+    <h2>Bulb learning</h2>
+    <p>how JS helps to access html attribute</p>
+    <button onclick="document.getElementById('myImage').src='bulb_on.png'">Turn On</button>
+    <img id="myImage" src="bulb.jpeg" alt="bulb" width="200px">
+    <br>
+    <button onclick="document.getElementById('time').innerHTML=Date()">click me to display Date and Time</button>
+    <p id="time">Time is .....</p>
+    <br>
+    <br>
+    <p id="p1">this is some paragraph with some predefined font size</p>
+    <button onclick="document.getElementById('p1').innerHTML='Hello Js!' ">
+        change inner text
+    </button>
+    <br>
+    <br><br><br>
+    <!-- what exactly happened that you created a pragraph and by using js you updated its styles -->
+    <p id="p2">this is my paragraph</p>
+    <script>
+        document.getElementById('p2').style.fontSize='35px';
+    </script>
+
+    
+</body>
+</html>
